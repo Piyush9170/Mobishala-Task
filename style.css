@@ -1,0 +1,104 @@
+body{
+  background-color: white;
+}
+.navbar-brand{
+    font-size: 35px;
+}
+nav{
+  font-size: 25px;
+}
+
+
+
+  /* external css: flickity.css */
+.carousel{
+    height: 400px;
+    
+}
+.carousel img:hover{
+  animation: zoom 0.5s linear forwards;
+}
+@keyframes zoom{
+  100%{
+    transform:scale(1.06);
+  }
+  
+}
+#casto:hover{
+  animation: zoom 0.5s linear forwards;
+}
+
+
+.carousel-cell {
+  width: 85%;
+  height: 400px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.btn:hover{
+  border-radius: 10px;
+  background-color: rgb(175, 175, 207);
+}
+/* .card:hover{
+  animation: zoom 0.5s linear forwards;
+} */
+.card{
+  background-color: rgb(30, 196, 30);
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 120px;
+  color: white;
+}
+
+h3{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color:black;
+}
+h3:hover{
+  color: blue;
+}
+/* #tt{
+  animation: right_to_left 2s ease;
+} */
+
+@keyframes right_to_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.footer{
+  background:#333;
+  margin-top: 20px;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:orange;
+}

@@ -24,7 +24,7 @@ fetch('https://api.themoviedb.org/3/list/1?api_key=32464b4e2879d0f036d553e9f9666
               </p>
               <p class="card-text text-light">Language: ${data.items[count].original_language}</p>
               <p class="card-text text-light">Release Date: ${data.items[count].release_date}</p>
-              <a href="/movie.html?id=${data.items[count].id}" class="btn btn-warning">View Details</a>
+              <a href="movie.html?id=${data.items[count].id}" class="btn btn-warning">View Details</a>
             </div>
           </div>
     </div>`
